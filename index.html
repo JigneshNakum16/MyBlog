@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>MyBlog</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">MyBlog</div>
+      <nav class="navbar">
+        <ul id="navbarItem">
+          <li><a href="index.html">Home</a></li>
+          <div class="dropdown">
+            <button class="dropbtn">Articles</button>
+            <div class="dropdown-content">
+              <a href="./pragramming.html">Programming</a>
+              <a href="./technologies.html">Technology</a>
+              <a href="./cryptocurrency.html">Cryptocurrency</a>
+            </div>
+          </div>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="mainContainer">
+      <div class="mainInnerContainer">
+        <h5 class="tagLine">What i do?</h5>
+        <h1 class="headLine">
+          I explain and teach tech­nol­o­gy, solve tech prob­lems and help you
+          make gad­get buy­ing decisions.
+        </h1>
+      </div>
+    </section>
+
+    <section id="popularPosts">
+      <h1 class="popularHeading">popular posts</h1>
+      <div id="popularPostInner"></div>
+    </section>
+
+    <section id="deals">
+      <h1 class="dealHeading">deals</h1>
+      <div id="dealsInner"></div>
+    </section>
+
+    <section id="latestPosts">
+      <h1 class="latestPostHeading">LATEST POSTS</h1>
+      <div id="latestPostsInner"></div>
+    </section>
+
+    <footer class="footer">
+      <div class="footerContent">
+        <p>&copy; 2023 MyBlog. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

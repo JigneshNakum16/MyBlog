@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./articles.css" />
+    <title>Technology</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">MyBlog</div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <div class="dropdown">
+            <button class="dropbtn">Articles</button>
+            <div class="dropdown-content">
+              <a href="./pragramming.html">Programming</a>
+              <a href="./technologies.html">Technology</a>
+              <a href="./cryptocurrency.html">Cryptocurrency</a>
+            </div>
+          </div>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./auth.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="technologies">
+      <div class="Container">
+        <h2 class="heading">Technologies</h2>
+        <div id="innerContainer"></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footerContent">
+        <p>&copy; 2023 MyBlog. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      const technologiesList = [
+        {
+          id: "1",
+          imgPost: "./image/post-03-free-img.jpg",
+          title: "15 COMMON-SENSE TIPS FOR TECH STARTUPS",
+          category: "Technologies",
+          content:
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.",
+        },
+        {
+          id: "2",
+          imgPost: "./image/post-08-free-img.jpg",
+          title: "THE MOST AWESOME ONLINE LOREM IPSUM",
+          category: "Technologies",
+          content:
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.",
+        },
+        {
+          id: "3",
+          imgPost: "./image/post-06-free-img.jpg",
+          title: "5 BEST IPHONE EARBUDS PRO SETTINGS",
+          category: "Technologies",
+          content:
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.",
+        },
+      ];
+
+      const technologyContainerList = document.getElementById("innerContainer");
+      technologiesList.forEach((item) => {
+        const postItem = document.createElement("div");
+        postItem.innerHTML = `
+        <div class="postImgContainer">
+          <img src="${item.imgPost}" alt="PostImg" />
+        </div>
+        <div class="postContent">
+          <h2 class="title">${item.title}</h2>
+          <p class="category">${item.category}</p>
+          <p class="content">${item.content}</p>
+        </div>
+  `;
+        technologyContainerList.appendChild(postItem);
+      });
+    </script>
+  </body>
+</html>

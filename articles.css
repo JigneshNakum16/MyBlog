@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 1px 3px 11px -2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 3px 11px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 3px 11px -2px rgba(0, 0, 0, 0.75);
+}
+ul {
+  list-style: none;
+  display: flex;
+}
+ul li a {
+  text-decoration: none;
+  padding: 0 10px;
+  color: black;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+.dropbtn {
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin: 0 8px;
+  background-color: white;
+}
+.dropbtn:hover {
+  text-decoration: underline;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#programming,
+#technologies,
+#cryptocurrency {
+  min-height: 100vh;
+  padding: 50px;
+  background-color: #712baf12;
+}
+.Container {
+  width: 70%;
+  margin: 0 auto;
+}
+.heading {
+  font-size: 40px;
+  padding: 10px 0 30px;
+}
+
+#innerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+#innerContainer div {
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.postContent {
+  padding: 30px;
+  background-color: white;
+}
+.postContent .title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #151515;
+  padding: 10px 0;
+}
+.postContent .category {
+  font-size: 20px;
+  padding: 10px 0;
+}
+.postImgContainer img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.postImgContainer img:hover {
+  transform: scale(1.1);
+  transition: all 1.2s ease-in-out;
+}
+.footer {
+  border-top: 1px solid lightgray;
+}
+.footerContent {
+  text-align: center;
+  padding: 20px;
+}
